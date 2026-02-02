@@ -28,3 +28,42 @@ console.log(id === anotherId);  //false
 
 // Reference (Non primitive)  : call by reference
 // Arrays, Objects, Functions
+
+const arr = ["Tea", "Coffee", "Juice"];
+
+let myObj = {
+    name: "Priya",
+    age: 22,
+}
+
+const fun = function() {
+    console.log("Hello World");  
+}
+
+
+
+//-------------------------------Memory---------------------------------
+
+//Two types of Memory : Stack(Primitive), Heap(Non-Primitive) 
+
+let firstname = "Pooja"
+
+let anothername = firstname
+anothername = "Raj"
+
+console.log(firstname);          //pooja
+console.log(anothername);        //raj
+
+let user1 = {
+    email: "user@google.com",
+    upi: "user@ybl",
+}
+
+let user2 = user1;
+
+user2.email = "pooja@google.com"
+
+console.log(user1.email);  //pooja@google.com
+console.log(user2.email);  //pooja@google.com
+
+
